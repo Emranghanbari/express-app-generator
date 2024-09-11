@@ -1,0 +1,11 @@
+{
+  "name": "nodejsmongodbgenerator",
+  "version": "1.0.0",
+  "description": "this is a generator for exppres apps with mongodb databse",
+  "main": "index.js",
+  "bin": {
+    "generate-express": "./index.js"
+  },
+  "author": "Emran Ghanbari <emranghni.work@gmail.com>",
+  "license": "ISC"
+}
