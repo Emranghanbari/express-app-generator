@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 const readline = require('readline');
 const { stdin: input, stdout: output } = require('node:process');
+
 const setup = require('./functions/setup');
 const {
   isValidMongoDBAddress,
