@@ -7,5 +7,5 @@
     "create-express-app": "./index.js"
   },
   "author": "Emran Ghanbari <emranghni.work@gmail.com>",
-  "license": "ISC"
+  "license": "MIT"
 }
