@@ -3,6 +3,11 @@
   "version": "1.0.2",
   "description": "this is a generator for exppres apps with mongodb databse",
   "main": "index.js",
+  "keywords": [
+    "generator",
+    "expressjs",
+    "mongoose"
+  ],
   "bin": {
     "create-express-app": "./index.js"
   },
