@@ -1,6 +1,6 @@
 {
   "name": "expressjs-mongodb-generator",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "this is a generator for exppres apps with mongodb databse",
   "main": "index.js",
   "keywords": [
@@ -8,6 +8,10 @@
     "expressjs",
     "mongoose"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Emranghanbari/express-app-generator.git"
+  },
   "bin": {
     "create-express-app": "./index.js"
   },

@@ -52,6 +52,42 @@ const serverJsContent = `const App = require('./app');
 new App();
 `;
 
+const gitignore = `# Node modules
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Environment variables
+.env
+
+# Build output
+dist/
+build/
+
+# Temporary files
+tmp/
+temp/
+
+# IDE and editor specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# Miscellaneous
+*.tgz
+`;
+
 function getRelativeContents(content) {
   const [projectName, database, secret, port] = content;
   const packageJsonContent = `{
@@ -85,5 +121,6 @@ port=${port}
 module.exports = {
   setupSeverContent,
   serverJsContent,
+  gitignore,
   getRelativeContents,
 };

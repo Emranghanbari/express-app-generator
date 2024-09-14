@@ -17,7 +17,7 @@ let answer = [];
 const questions = [
   'what is your project name? '.cyan,
   'what is your database address? '.cyan,
-  'what is your secret kye for JWT? '.cyan,
+  'what is your secret key for JWT? '.cyan,
   'what is the project port? '.cyan,
 ];
 

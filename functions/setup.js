@@ -7,6 +7,7 @@ const {
   serverJsContent,
   setupSeverContent,
   getRelativeContents,
+  gitignore,
 } = require('../contents/contents');
 const createDirectories = require('./createDirectories');
 
@@ -46,6 +47,11 @@ async function setup(answer) {
 
       await fs.writeFile(`${projectDir}/.env`, dotenvContent);
       console.log(`created .env file at ${projectDir.match(regex)}`.green);
+
+      await fs.writeFile(`${projectDir}/.gitignore`, gitignore);
+      console.log(
+        `created .gitignore file at ${projectDir.match(regex)}`.green
+      );
 
       await fs.writeFile(`${appDir}/index.js`, setupSeverContent);
       console.log(`created index.js file at ${appDir.match(regex)}`.green);
